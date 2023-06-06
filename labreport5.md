@@ -49,7 +49,26 @@ In order to fix the bug within the code we need to have all of the proper files 
 
 ![Image](script)
 
-We also need to make sure that we are in the correct directory in order to be able to run these files. In order to do this we can do the ```pwd``` command which should show us that we are in the ```/Users/bryan/Documents/GitHub/lab7``` directory where our files are stored. If it doesn't pop up with the correct directory, you want to command ```cd``` into the correct directory to run our files.
+We also need to make sure that we are in the correct directory in order to be able to run these files. In order to do this we can do the ```pwd``` command which should show us that we are in the ```/Users/bryan/Documents/GitHub/lab7``` directory where our files are stored. If it doesn't pop up with the correct directory, you want to command ```cd``` into the correct directory to be able to run our files.
 
-In order to trigger the bug we simply ran the test.sh file by doing ```bash test.sh``` 
+In order to trigger the bug we simply ran the test.sh file by doing ```$ bash test.sh```. This gave us the following failure without updating the code to fix the bug:
+
+![Image](failure)
+
+In order to fix the bug we have to fix the following while loop in ```ListExamples.java```:
+```
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      // change index1 below to index 2 to fix test
+      index1 += 1;
+    }
+```
+To fix it we have to change the ```index1``` to ```index2``` so that it increments the correct variable. This will fix the bug because now the while loop will increment ```index2``` properly and the ```while(index2 < list2.size())``` will eventually not be satisfied and therefore the while loop will end which fixes our issue of timing out. We can see the change made within the files below and the tests that succeeded after changing the file:
+
+![Image](ListExamplesAfter)
+
+![Image](ListexamplesTestsAfter)
+
+![Image](script)
+
 
