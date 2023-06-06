@@ -75,4 +75,5 @@ To fix it we have to change the ```index1``` to ```index2``` so that it incremen
 
 ![Image](script.png)
 
-
+## Part 2: Reflection
+This class was a very enjoyable class and I learned a lot of new things. My favorite thing that I learned in the second half of this course was learning how to to do everything from the command line. When I say this I mean doing things like git pushing or committing straight from the command line. Another thing that I really enjoyed learning that I didn't know before was using vim. It is something that I am glad I learned and being able to edit files straight from the command line is something that I believe will save me a lot of time in the future. Once again thank you for this course and everythign it taught me!
