@@ -11,9 +11,9 @@ I am using a Macbook on MacOS in Visual Studio Code.
 
 I am trying to run tests from the lab7, however whenever I try running the test on within "ListExamplesTests.java" I seem to be getting a time out error on the test ```testMerge2```. The test is testing the merge method that is contained within the file "ListExamples.java". It is meant to merge two lists together. Below You can see the error, as well as what the code is supposed to do, which is merging the two list together.
 
-![Image](error)
+![Image](testFailure.png)
 
-![Image](code)
+![Image]()
 
 ***Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.***
 
